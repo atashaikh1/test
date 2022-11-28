@@ -1,1 +1,0 @@
-data "aws_iam_policy_document" "example" { statement {   sid = "1"   effect = "Allow"   actions = [     "iam:PassRole",     "lambda:CreateFunction",     "lambda:CreateEventSourceMapping",     "dynamodb:CreateTable",     "dynamodb:PutItem",   ]   resources = [     "*",   ] }}
